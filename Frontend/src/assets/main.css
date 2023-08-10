@@ -1,0 +1,165 @@
+@import './base.css';
+
+section{
+  padding: 100px 200px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.icon{
+color: rgb(17, 108, 255);
+font-size: 8em;
+text-align: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: rgb(17, 108, 255);
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+@media (max-width:1023px) {
+  header{
+      padding: 12px 20px;
+  }
+  .navigation a{
+      padding-left: 10px;
+  }
+
+  .title{
+      font-size: 1.8em;
+  }
+  
+  section{
+      padding: 80px 20px;
+  }
+  .main-content h2{
+      font-size: 1em;
+  }
+  .main-content h3{
+      font-size: 1.6em;
+  }
+  .content{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width:641px) {
+  .header{
+      padding: 10px 16px;
+  }
+  body{
+      font-size: 12px;
+  }
+  section{
+      padding: 40px 16px;
+  }
+  .main-content h2{
+      font-size: 0.8em;
+  }
+  .main-content h3{
+      font-size: 1.4em;
+  }
+}
+.modal-content{
+    
+  padding: 1em;
+  color: black;
+}
+
+@media (max-width:300px) {
+  header{
+      padding: 6px 12px;
+  }
+  body{
+      font-size: 8em;
+  }
+  .title{
+      font-size: 1.2em;
+  }
+  .main {
+      font-size: 12em;
+  }
+  section{
+      padding: 30px 14px;
+  }
+  
+}
+@media (min-width: 1024px) {
+header {
+  display: flex;
+  place-items: center;
+  padding-right: calc(var(--section-gap) / 2);
+} 
+
+.logo {
+  margin: 0 2rem 0 0;
+}
+
+header .wrapper {
+  display: flex;
+  place-items: flex-start;
+  flex-wrap: wrap;
+}
+
+nav {
+  text-align: left;
+  margin-left: -1rem;
+  font-size: 1rem;
+
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+}
+/* 
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  font-weight: normal;
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */

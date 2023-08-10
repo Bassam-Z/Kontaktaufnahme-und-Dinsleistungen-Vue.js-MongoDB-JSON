@@ -1,0 +1,45 @@
+{
+  "wz":[{
+      "id": 1,
+      "title": "Vue.js Framework",
+      "body": "Dev Framework",
+      "iconName": "Vue.png"
+    }, {
+      "id": 2,
+      "title": "Angular Framework",
+      "body": "Dev Framework",
+      "iconName": "angular.png"
+    }, {
+      "id": 3,
+      "title": "React Framework",
+      "body": "Dev Framework",
+      "iconName": "react.png"
+    }, {
+      "id": 4,
+      "title": "ASP.NET Framework",
+      "body": "Dev Framework",
+      "iconName": "asp.net.logo.png"
+    }, {
+      "id": 5,
+      "title": "Node.js Platform",
+      "body": "Dev Platform",
+      "iconName": "node.png"
+    }, {
+      "id": 6,
+      "title": "HTML5, CC3, JavaScript  Technologien",
+      "body": "Dev Technologien",
+      "iconName": "csshtmljs.png"
+    }, {
+      "id": 7,
+      "title": "C# Programierung Sprache",
+      "body": "Dev Sprache",
+      "iconName": "c.png"
+    }, {
+      "id": 8,
+      "title": "Java Programierung Sprache",
+      "body": "Dev Sprache",
+      "iconName": "Java-Logo.png"
+    }]
+
+
+}
