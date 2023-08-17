@@ -160,7 +160,7 @@ export default {
         const emailAdress = this.user.emailAdress;
         const kennenwort = this.user.kennenwort;
         // let anrede = this.user.anrede;
-        // let vorname = this.user.vorname;
+        let vorname = this.user.vorname;
         // let nachname = this.user.nachname;
         console.log(' login');
         try {
@@ -172,7 +172,7 @@ export default {
             const data = await res.json();
             this.emailerrorMessages = '';
             this.kennenworterrorMessages= '';
-            console.log(data + ' log');
+            console.log(data);
             if(data.errors){
                 console.log(data.errors.emailAdress);
                 console.log(data.errors.kennenwort);
@@ -189,13 +189,13 @@ export default {
                 //     nachname: data.nachname,
                 // }
                 // axios.get()
-                console.log(data.user + 'test');
+                console.log(data.vorname + 'test');
                 
                 // this.user.anrede = data.anrede;
                 // this.user.vorname = data.vorname;
                 // this.user.nachname = data.nachname;
-                localStorage.setItem('User-Info', this.user.vorname)
-                console.log(this.user.nachname)
+                console.log(data.vorname)
+                localStorage.setItem('User-Info', data.vorname)
                 // this.$store.dispatch('setUser', data)
                 // localStorage.setItem('userData', JSON.stringify(userData));
                 location.assign('/denstleisungen-Werkzeuge-Kontakt');

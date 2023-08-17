@@ -66,6 +66,7 @@ export default {
       let Data = localStorage.getItem('User-Info');
       // console.log(Data)
       this.userData = Data ;
+      console.log(this.userData + ' user Data')
       // console.log(this.userData)
     },
     // istWas(val1, val2){
