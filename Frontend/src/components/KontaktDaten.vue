@@ -13,8 +13,8 @@
                 </div>
             </div>
             <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-at"></i>
+                <div class="icon" >
+                    <a href="mailto:basam.ali@test.com"><i class="fa-solid fa-at" type="button" ></i></a>
                 </div>
                 <div class="info">
                     <h3>E-Mail</h3>
