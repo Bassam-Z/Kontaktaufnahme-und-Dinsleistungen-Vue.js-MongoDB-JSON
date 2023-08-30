@@ -46,7 +46,12 @@ text-align: center;
   .title{
       font-size: 1.8em;
   }
-  
+  .logo{
+    font-size: 1.2em;
+  }
+  .footer-title{
+    font-size: 1.2em;
+  }
   section{
       padding: 80px 20px;
   }
@@ -70,7 +75,13 @@ text-align: center;
       font-size: 12px;
   }
   section{
-      padding: 40px 16px;
+      padding: 70px 16px;
+  }
+  .logo{
+    font-size: 1.2em;
+  }
+  .footer-title{
+    font-size: 1.2em;
   }
   .main-content h2{
       font-size: 0.8em;
@@ -94,6 +105,12 @@ text-align: center;
   }
   .title{
       font-size: 1.2em;
+  }
+  .logo{
+    font-size: 1.2em;
+  }
+  .footer-title{
+    font-size: 1.2em;
   }
   .main {
       font-size: 12em;

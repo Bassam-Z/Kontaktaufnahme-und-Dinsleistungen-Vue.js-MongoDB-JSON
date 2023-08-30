@@ -35,7 +35,7 @@
                     </v-row>
                     <v-card-actions class="modal-footer"> 
                         <p style="margin-right: auto;font-size: 11px;">haben Sie keinen  User-ID ? drucken Sie <a href="/userRegister">hier!</a></p>
-                        <v-btn class="btn" style="color:#4c1d87 ;"  @click="userLogin()">Login</v-btn>
+                        <v-btn class="btn" @click="userLogin()">Login</v-btn>
                         <!-- <v-btn @click="statsChenge()">test</v-btn> -->
                         <!-- <v-btn class="btn btn-primary" style="margin-right: 10px;" @click="this.loginDialogClose()" >Schließen</v-btn> -->
                     </v-card-actions> 
@@ -52,7 +52,7 @@ export default {
     name:'Anmelden',
     props:['istLogin'],
     data(){
-    return{
+    return {
         
         
         // istWas: nameStore(),
@@ -76,7 +76,7 @@ export default {
                 min: v => v.length >= 3 || 'Min 3 characters',
                 email: () => this.validateEmail || 'ungültig',
             }
-    }
+        }
     },
     watch: {
        

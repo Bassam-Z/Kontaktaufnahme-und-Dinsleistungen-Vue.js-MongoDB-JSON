@@ -1,6 +1,6 @@
 <template>
     <div class="heading">
-      <h1>Hier wohne ich ^^</h1>
+      <h1>Mein wohnort <i class="fa-solid fa-location-dot"></i></h1>
     </div>
   </template>
   
