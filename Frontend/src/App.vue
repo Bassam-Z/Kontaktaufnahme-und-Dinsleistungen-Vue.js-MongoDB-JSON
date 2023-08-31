@@ -1,6 +1,6 @@
 <template>
     <header>
-      <a v-if="this.istEingelogt" href="/" class="logo">Bassam Ali</a>
+      <a v-if="!this.istEingelogt" href="/" class="logo">Bassam Ali</a>
       <a v-else href="/denstleisungen-Werkzeuge-Kontakt" class="logo">Bassam Ali</a>
       <nav class="navigation" >
         <v-li class="userName" v-if="$store.state.istEingelogt"> Hallo {{this.userData}} </v-li>
@@ -87,6 +87,7 @@ export default {
       // Löschen des Store-Inhalts und des Local Storage beim Ausloggen
       this.$store.commit("CLEAR_STORE");
       localStorage.removeItem('User-Info')
+      // this.istLogin = false
       // localStorage.removeItem("user");
     }
   }
