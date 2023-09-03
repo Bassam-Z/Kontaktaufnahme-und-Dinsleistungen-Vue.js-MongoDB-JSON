@@ -25,21 +25,32 @@ export default {
     onMounted(() => {
       const apiKey = 'pz8PamGdhkuVVlaDQBbC';
 
-      const initialState = { lng: 7.464 , lat:  51.515, zoom: 12 };
+      const initialState = { lng: 7.465298, lat: 51.513587, zoom: 12 };
 
-      map.value = markRaw(new Map({
+      map.value = markRaw (new Map({
         container: mapContainer.value,
         style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${apiKey}`,
         center: [initialState.lng, initialState.lat],
         zoom: initialState.zoom
       }));
+      // Füge den Zoom-Controller hinzu
       map.value.addControl(new NavigationControl(), 'top-right');
-      new Marker({color: "#FF0000"})
-      .setLngLat([initialState.lng, initialState.lat])
+
+      // Berechne die Mitte der Karte
+      const mapCenter = map.value.getCenter();
+      
+      // Füge einen Pin (Marker) hinzu
+      // new Marker({color: "#FF0000"})
+      // .setLngLat([7.508298, 51.548587])
       // .addTo(map.value);
-      }),
+          
+    }),
+
     onUnmounted(() => {
-      map.value?.remove();
+      // map.value?.remove();
+      if (map.value) {
+        map.value.remove();
+      }
     })
 
     return {
@@ -61,6 +72,8 @@ export default {
 }
 
 .map {
+  box-shadow: 2px 4px 6px rgb(28, 6 ,49, 0.1);
+  border-radius: 6px;
   position: absolute;
   width: 100%;
   height: 90%;
@@ -72,4 +85,6 @@ export default {
   bottom: 10px;
   z-index: 999;
 }
+
+
 </style>

@@ -149,7 +149,7 @@
       background-color:#3863B2;
       padding: 1.5rem;
       width: 85%;
-      border-radius: 3px;
+      border-radius: 6px;
       box-shadow: 0 25px 50px -12px  rgba(0 0 0 .25);;
   }
   
@@ -172,7 +172,6 @@
       padding: 10px 1rem;
       border: none;
       display: block;
-      border-radius: 2px;
   
   }
   

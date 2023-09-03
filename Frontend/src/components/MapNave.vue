@@ -19,7 +19,7 @@
     color: white;
   }
   
-  .heading > h1 {
+  .heading  h1 {
     padding: 10px;
     margin: 0;
   }
