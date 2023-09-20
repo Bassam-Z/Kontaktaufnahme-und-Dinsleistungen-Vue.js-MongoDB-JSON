@@ -136,7 +136,7 @@ header{
 }
 
 .navigation a:hover{
-    color: rgb(109, 83, 255);
+    color: rgb(205, 84, 171);
 }
 /* .logo {
   display: block;

@@ -124,6 +124,7 @@ export default{
     color: aliceblue;
     font-size: 1.4em;
     font-weight: 500;
+    text-shadow: 1px 1px 5px #e9aed3;
 }
 
 .main h2 span {
@@ -132,6 +133,7 @@ export default{
     color: rgb(17, 108, 255);
     font-size: 3em;
     font-weight: 600;
+    text-shadow: 1px 3px 5px #5c419d;
 }
 
 .main h3 {
@@ -141,6 +143,7 @@ export default{
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
+    text-shadow: 1px 1px 3px #e9aed3;
 }
 
 .main-btn{
