@@ -1,3 +1,5 @@
+<!-- eslint-disable prettier/prettier -->
+<!-- eslint-disable prettier/prettier -->
 <template>
 <main>
     <section class="cards contact" id="contacts">
@@ -95,106 +97,106 @@ export default {
     name: "KontaktDaten",
     components: {login},
     props:['nachrichtOffnen', 'eingelogt'],
-  
+
     setup(){
-          const state = reactive({
-              anrede: '',
-              name: '',
-              vorname: '',
-              email: '',
-              nachrichtInhalt: '',
-          })
-          const rules = computed(() =>{
-              return {
-                  anrede: {
-                  required,
-                  minLength: minLength(3)
-                  },
-                  name: {
-                      required,
-                      minLength: minLength(3)
-                  },
-                  vorname: {
-                      required,
-                      minLength: minLength(3)
-                  },
-                  email: {
-                      required,
-                      email,
-                  },
-                  nachrichtInhalt: {
-                      required,
-                      minLength: minLength(10)
-                  },
-              }
-          })
-          const v$ = useVuelidate(rules, state)
-  
-          return{
-              state,
-              v$,
-          }
-      },
+        const state = reactive({
+            anrede: '',
+            name: '',
+            vorname: '',
+            email: '',
+            nachrichtInhalt: '',
+        })
+        const rules = computed(() =>{
+            return {
+                anrede: {
+                required,
+                minLength: minLength(3)
+                },
+                name: {
+                    required,
+                    minLength: minLength(3)
+                },
+                vorname: {
+                    required,
+                    minLength: minLength(3)
+                },
+                email: {
+                    required,
+                    email,
+                },
+                nachrichtInhalt: {
+                    required,
+                    minLength: minLength(10)
+                },
+            }
+        })
+        const v$ = useVuelidate(rules, state)
+
+        return{
+            state,
+            v$,
+        }
+    },
 
     methods:{
-          nachrichtSubmit(){
-              this.v$.$validate();
-              if (!this.v$.$error){
-                  alert("Nachricht ist gesendet!")
-              } else {
-                  alert("Nachricht ist nicht gesendet!")
-  
-              }
-          },
-          NachrichtDialogClose(){
-            this.showRegisterDialog = false
-            this.show1 = false,
-            this.show2= false,
-            this.formHasErrors = false,
-            this.$emit('closeRegister')
+        nachrichtSubmit(){
+            this.v$.$validate();
+            if (!this.v$.$error){
+                alert("Nachricht ist gesendet!")
+            } else {
+                alert("Nachricht ist nicht gesendet!")
 
+            }
         },
-        //   NachrichtSchliessen(){
-        //     this.$emit('close')
-        //   }
-         
-      },
-    
+        NachrichtDialogClose(){
+        this.showRegisterDialog = false
+        this.show1 = false,
+        this.show2= false,
+        this.formHasErrors = false,
+        this.$emit('closeRegister')
 
-    // data: () => {
-    //     return {
-    //         v$: useVuelidate(),
-    //         anrede: '',
-    //         name: '',
-    //         vorname: '',
-    //         email: '',
-    //         nachrichtInhalt: '',
-    //     }
+    },
+    //   NachrichtSchliessen(){
+    //     this.$emit('close')
+    //   }
+        
+    },
 
-    // },
-    
-    // validations: {
-    //     anrede: {
-    //         required,
-    //         minLength: minLength(3)
-    //     },
-    //     name: {
-    //         required,
-    //         minLength: minLength(3)
-    //     },
-    //     vorname: {
-    //         required,
-    //         minLength: minLength(3)
-    //     },
-    //     email: {
-    //         required,
-    //         email,
-    //     },
-    //     nachrichtInhalt: {
-    //         required,
-    //         minLength: minLength(10)
-    //     },
-    // },
+
+// data: () => {
+//     return {
+//         v$: useVuelidate(),
+//         anrede: '',
+//         name: '',
+//         vorname: '',
+//         email: '',
+//         nachrichtInhalt: '',
+//     }
+
+// },
+
+// validations: {
+//     anrede: {
+//         required,
+//         minLength: minLength(3)
+//     },
+//     name: {
+//         required,
+//         minLength: minLength(3)
+//     },
+//     vorname: {
+//         required,
+//         minLength: minLength(3)
+//     },
+//     email: {
+//         required,
+//         email,
+//     },
+//     nachrichtInhalt: {
+//         required,
+//         minLength: minLength(10)
+//     },
+// },
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-     <!-- <section class="main">
+    <!-- <section class="main">
             <div>
                 <h2> Hallo ich bin Bassam Ali <br><span>Anwendung Entweklier</span></h2>
                 <h3> Ich entwikle Web Anwendungen</h3>
